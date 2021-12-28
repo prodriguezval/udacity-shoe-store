@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">ShoeStore</string>
+    <string name="company_name"> 🥾 Zapatos Inc.</string>
+    <string name="scr_login_hnt_email">joe@somemail.com</string>
+    <string name="scr_login_hnt_password">********</string>
+    <string name="scr_login_btn_login">Login</string>
+    <string name="scr_login_txt_email">Email</string>
+    <string name="scr_login_txt_password">Password</string>
+    <string name="scr_login_txt_new_account">Don\'t have an account?</string>
+    <string name="scr_login_btn_new_account">Create one</string>
+    <string name="scr_welcome_btn_next">NEXT</string>
+    <string name="scr_welcome_txt_slogan"> 👞 Zapatos Inc. is the best shop that you can find in all the play store 👞 </string>
+    <string name="scr_welcome_txt_welcome">WELCOME</string>
+    <string name="scr_instructions_txt_instructions">Click on "Go" button which will take you to a new page. Press the add button to add a new shoe and save or cancel the operation</string>
+    <string name="scr_instructions_txt_title">INSTRUCTIONS</string>
+    <string name="scr_instructions_btn_go">GO</string>
+    <string name="scr_shoe_list_detail_img_description">Shoe Image</string>
+    <string name="src_shoe_detail_hnt_shoe_name">Militia</string>
+    <string name="src_shoe_detail_txt_shoe_name">Name:</string>
+    <string name="src_shoe_detail_txt_shoe_company_name">Company Name:</string>
+    <string name="src_shoe_detail_hnt_shoe_company_name">Adidos</string>
+    <string name="src_shoe_detail_txt_shoe_size">Size:</string>
+    <string name="src_shoe_detail_hnt_shoe_size">45</string>
+    <string name="src_shoe_detail_hnt_shoe_description">Created for war and casual outing</string>
+    <string name="src_shoe_detail_txt_shoe_description">Description:</string>
+    <string name="src_shoe_detail_bnt_cancel">Cancel</string>
+    <string name="src_shoe_detail_bnt_save">Save</string>
+    <string name="scr_shoe_list_btn_add">Add Shoe</string>
+
+</resources>

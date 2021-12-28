@@ -1,0 +1,45 @@
+package com.udacity.shoestore.shoe.screens
+
+import android.os.Bundle
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.databinding.DataBindingUtil
+import androidx.fragment.app.activityViewModels
+import androidx.navigation.fragment.findNavController
+import com.udacity.shoestore.R
+import com.udacity.shoestore.databinding.FragmentShoeListBinding
+import com.udacity.shoestore.databinding.FragmentShoeListDetailBinding
+
+
+class ShoeListFragment : Fragment() {
+    lateinit var binding: FragmentShoeListBinding
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_shoe_list, container, false)
+
+        val shoeListLayout = binding.layoutShoes
+        val viewModel: ShoeViewModel by activityViewModels()
+
+
+        viewModel.getShoes().observe(viewLifecycleOwner, { shoes ->
+            shoes.forEach { shoe ->
+                val shoeItemBinding = DataBindingUtil.inflate<FragmentShoeListDetailBinding>(inflater, R.layout.fragment_shoe_list_detail, container, false)
+                val imageName = resources.getIdentifier("com.udacity.shoestore:drawable/${shoe.images[0]}", null, null)
+                shoeItemBinding.imgShoe.setImageResource(imageName)
+                shoeItemBinding.txtShoeName.text = (shoe.name)
+                shoeItemBinding.txtShoeDescription.text = (shoe.description)
+                shoeListLayout.addView(shoeItemBinding.root)
+            }
+        })
+
+        binding.btnAddShoe.setOnClickListener {
+            findNavController().navigate(R.id.action_shoeListFragment_to_shoeDetailFragment)
+        }
+
+        return binding.root
+    }
+}

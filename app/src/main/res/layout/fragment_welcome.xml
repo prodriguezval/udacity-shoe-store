@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="26dp"
+        tools:context="com.udacity.shoestore.welcome.WelcomeFragment">
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="8dp"
+            android:paddingTop="30dp"
+            android:text="@string/scr_welcome_txt_welcome"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:text="@string/scr_welcome_txt_slogan"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_gravity="center"
+            style="@style/std_button"
+            android:text="@string/scr_welcome_btn_next" />
+    </LinearLayout>
+</layout>

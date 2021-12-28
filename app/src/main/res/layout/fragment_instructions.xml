@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="26dp"
+        tools:context="com.udacity.shoestore.instructions.InstructionsFragment">
+
+        <TextView
+            android:id="@+id/instruction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="@string/scr_instructions_txt_title"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#9B1C31"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/instructions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="20dp"
+            android:text="@string/scr_instructions_txt_instructions"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_gravity="center"
+            style="@style/std_button"
+            android:text="@string/scr_instructions_btn_go" />
+
+    </LinearLayout>
+</layout>
