@@ -26,5 +26,6 @@
     <string name="src_shoe_detail_bnt_cancel">Cancel</string>
     <string name="src_shoe_detail_bnt_save">Save</string>
     <string name="scr_shoe_list_btn_add">Add Shoe</string>
+    <string name="menu_itm_logout">Logout</string>
 
 </resources>
